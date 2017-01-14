@@ -1,27 +1,27 @@
 ---
 layout: cheat-sheet
-title: GitHub Git Cheat Sheet
-byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+title: গিটহাব গিট চিট শীট
+byline: গিট হচ্ছে একটি ওপেন সোর্স ড্রিস্ট্রিবিউটেড ভার্শন কন্ট্রোল সিস্টেম যা আপনার ল্যাপটপ বা ডেস্কটপে গিটহাব সুবিধাদি প্রদান করে। এই চিত শীটে সাধারনভাবে ব্যবহৃত গিট কমান্ড লাইনের নির্দেশনা দেওয়া আছে । 
 leadingpath: ../../
 ---
 
 {% capture colOne %}
-## Install Git
+## ইন্সটল গিট
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
-### GitHub for Windows
+### উইন্ডোজের জন্য গিটহাব
 http://windows.github.com
 
-### GitHub for Mac
+### ম্যাকের জন্য গিটহাব
 http://mac.github.com
 
 Git distributions for Linux and POSIX systems are available on the official Git SCM website.
 
-### Git for all platforms
+### সকল প্ল্যাটফরমের জন্য গিটহাব
 http://git-scm.com
 
-## Configure tooling
-Configure user information for all local repositories
+## টুল কনফিগার করা
+সকল লোকাল রিপোজিটরির জন্য টুল কনফিগার করা
 
 ```$ git config --global user.name "[name]"```
 
@@ -33,7 +33,7 @@ Sets the name you want attached to your commit transactions
 Sets the email you want attached to your commit transactions
 
 
-## Create repositories
+## রিপোজিটরি তৈরি করা
 Start a new repository or obtain one from an existing URL
 
 
@@ -54,7 +54,7 @@ Downloads a project and its entire version history
 
 {% capture colTwo %}
 
-## Make changes
+## পরিবর্তন করা
 Review edits and craft a commit transaction
 
 
@@ -87,7 +87,7 @@ Unstages the file, but preserves its contents
 
 Records file snapshots permanently in version history
 
-## Group changes
+## গ্রুপ পরিবর্তন
 Name a series of commits and combine completed efforts
 
 
@@ -140,7 +140,7 @@ Removes the file from version control but preserves the file locally
 
 Changes the file name and prepare it for commit
 
-## Suppress tracking
+## ট্র্যাকিং দমন
 Exclude temporary files and paths
 
 ```
@@ -156,7 +156,7 @@ A text file named `.gitignore` suppresses accidental versioning of files and pat
 
 Lists all ignored files in this project
 
-## Save fragments
+## ফ্রাগমেন্টস সংরক্ষন
 Shelve and restore incomplete changes
 
 
@@ -184,7 +184,7 @@ Discards the most recently stashed changeset
 </div>
 
 {% capture colFour %}
-## Review history
+## হিস্টোরি রিভিউ
 Browse and inspect the evolution of project files
 
 
@@ -207,7 +207,7 @@ Shows content differences between two branches
 
 Outputs metadata and content changes of the specified commit
 
-## Redo commits
+## কমিট রিডো করা
 Erase mistakes and craft replacement history
 
 
@@ -220,7 +220,7 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 Discards all history and changes back to the specified commit
 
-## Synchronize changes
+## সিঙ্ক্রোনাইজড  পরিবর্তনগুলি
 Register a remote (URL) and exchange repository history
 
 
