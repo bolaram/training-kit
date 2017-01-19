@@ -93,27 +93,27 @@ Name a series of commits and combine completed efforts
 
 ```$ git branch```
 
-Lists all local branches in the current repository
+বর্তমান রিপোসিটোরির মধ্যে সব লোকাল ব্রাঞ্চ তালিকাভুক্ত করুন। 
 
 
 ```$ git branch [branch-name]```
 
-Creates a new branch
+একটি নতুন ব্রাঞ্চ তৈরি করুন
 
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and updates working directory
+নির্দিষ্ট শাখায় সুইচ এবং আপডেট ওয়ার্কিং ডিরেক্টরি
 
 
 ```$ git merge [branch-name]```
 
-Combines the specified branch’s history into the current branch
+বর্তমান শাখায় নির্দিষ্ট শাখার ইতিহাস একত্রিত করুন
 
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+নির্দিষ্ট শাখা মুছে ফেলে
 {% endcapture %}
 <div class="col-md-6">
 {{ colTwo | markdownify }}
@@ -122,26 +122,26 @@ Deletes the specified branch
 
 
 {% capture colThree %}
-## Refactor file names
-Relocate and remove versioned files
+## ফাইলের নাম Refactor করুন
+versioned ফাইল নতুন স্থানে স্থাপন বা মুছে ফেলুন
 
 
 ```$ git rm [file]```
 
-Deletes the file from the working directory and stages the deletion
+ওয়ার্কিং ডিরেক্টরি থেকে ফাইল মুছে এবং মুছে ফেলার পর্যায়ে
 
 
 ```$ git rm --cached [file]```
 
-Removes the file from version control but preserves the file locally
+ভার্সন নিয়ন্ত্রণ থেকে ফাইল মুছে ফেলা কিন্তু স্থানীয়ভাবে ফাইল সংরক্ষন করা
 
 
 ```$ git mv [file-original] [file-renamed]```
 
-Changes the file name and prepare it for commit
+ফাইলের নাম পরিবর্তন করা এবং কমিট জন্য এটি প্রস্তুত করুন
 
 ## ট্র্যাকিং দমন
-Exclude temporary files and paths
+অস্থায়ী ফাইল এবং পাথ বাদ দিন
 
 ```
 *.log
@@ -154,30 +154,30 @@ A text file named `.gitignore` suppresses accidental versioning of files and pat
 
 ```$ git ls-files --others --ignored --exclude-standard```
 
-Lists all ignored files in this project
+এই প্রকল্পে সব উপেক্ষিত ফাইলের  তালিকা তৈরি করুন
 
 ## ফ্রাগমেন্টস সংরক্ষন
-Shelve and restore incomplete changes
+অসম্পূর্ণ পরিবর্তন পুনরুদ্ধার এবং সরাইয়া রাখা
 
 
 ```$ git stash```
 
-Temporarily stores all modified tracked files
+সাময়িকভাবে সব পরিবর্তিত ট্র্যাক ফাইল স্টোর করা
 
 
 ```$ git stash pop```
 
-Restores the most recently stashed files
+সাম্প্রতিক stashed ফাইল রিস্টোর করা
 
 
 ```$ git stash list```
 
-Lists all stashed changesets
+সব stashed changesets ফাইলের তালিকা তৈরি করুন
 
 
 ```$ git stash drop```
 
-Discards the most recently stashed changeset
+সাম্প্রতিক stashed changeset ফাইল বর্জন করুন
 {% endcapture %}
 <div class="col-md-6">
 {{ colThree | markdownify }}
@@ -185,30 +185,30 @@ Discards the most recently stashed changeset
 
 {% capture colFour %}
 ## হিস্টোরি রিভিউ
-Browse and inspect the evolution of project files
+ব্রাউজ করুন এবং প্রকল্পের ফাইল এর বিবর্তন পরিদর্শন করুন 
 
 
 ```$ git log```
 
-Lists version history for the current branch
+বর্তমান শাখার জন্য ভার্সন ইতিহাসের তালিকা তৈরি করুন
 
 
 ```$ git log --follow [file]```
 
-Lists version history for the file, including renames
+বর্তমান শাখার জন্য ভার্সন ইতিহাসের তালিকা তৈরি করুন, renames সহ
 
 
 ```$ git diff [first-branch]...[second-branch]```
 
-Shows content differences between two branches
+দুই শাখার মধ্যে বিষয়বস্তুর পার্থক্য দেখুন
 
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+নির্দিষ্ট আউটপুট মেটাডেটা এবং বিষয়বস্তু পরিবর্তন কমিট করুন
 
 ## কমিট রিডো করা
-Erase mistakes and craft replacement history
+ভুল এবংক্রাফট  প্রতিস্থাপনের  ইতিহাস মুছুন
 
 
 ```$ git reset [commit]```
@@ -218,30 +218,30 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 ```$ git reset --hard [commit]```
 
-Discards all history and changes back to the specified commit
+সব ইতিহাস এবং করা পরিবর্তনগুলি ফিরে নির্দিষ্ট কমিটে অস্বীকার করুন
 
 ## সিঙ্ক্রোনাইজড  পরিবর্তনগুলি
-Register a remote (URL) and exchange repository history
+একটি দূরবর্তী (URL) নিবন্ধন করুন এবং রিপোসিটোরি ইতিহাস এক্সচেঞ্জ করুন 
 
 
 ```$ git fetch [remote]```
 
-Downloads all history from the remote repository
+দূরবর্তী রিপোসিটোরি  থেকে সব ইতিহাস ডাউনলোড করুন 
 
 
 ```$ git merge [remote]/[branch]```
 
-Combines the remote branch into the current local branch
+বর্তমান স্থানীয় শাখা ও  দূরবর্তী শাখা একত্রিত করুন 
 
 
 ```$ git push [remote] [branch]```
 
-Uploads all local branch commits to GitHub
+সকল লোকাল ব্রাঞ্চ কমিট গিটহাবে আপলোড করুন
 
 
 ```$ git pull```
 
-Downloads bookmark history and incorporates changes
+বুকমার্ক হিস্টোরি ও অন্তর্ভুক্ত পরিবর্তনগুলো ডাউনলোড করুন 
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
