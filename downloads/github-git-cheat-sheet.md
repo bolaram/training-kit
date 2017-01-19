@@ -7,7 +7,7 @@ leadingpath: ../../
 
 {% capture colOne %}
 ## ইন্সটল গিট
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+গিটহাবের রিপোজিটরির  সাধারন অ্যাকশন ও  উন্নত পরিস্থিতিতে জন্য Git এর একটি স্বয়ংক্রিয়ভাবে আপডেট করার কমান্ড লাইন সংস্করণসহ  ডেস্কটপের জন্য গ্রাফিকাল ইউজার ইন্টারফেস সুবিধাযুক্ত ক্লায়েন্ট আছে।
 
 ### উইন্ডোজের জন্য গিটহাব
 http://windows.github.com
@@ -15,7 +15,7 @@ http://windows.github.com
 ### ম্যাকের জন্য গিটহাব
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM website.
+লিনাক্স ও POSIX সিস্টেমের জন্য গিট অফিশিয়াল Git SCM ওয়েবসাইটে উপলব্ধ।
 
 ### সকল প্ল্যাটফরমের জন্য গিটহাব
 http://git-scm.com
@@ -25,26 +25,26 @@ http://git-scm.com
 
 ```$ git config --global user.name "[name]"```
 
-Sets the name you want attached to your commit transactions
+নাম ঠিক করুন যেটা আপনি কমিট ট্রান্সেকশনের সাথে  সংযুক্ত করতে চান।
 
 
 ```$ git config --global user.email "[email address]"```
 
-Sets the email you want attached to your commit transactions
+ইমেইল ঠিক করুন যেটা আপনি কমিট ট্রান্সেকশনের সাথে  সংযুক্ত করতে চান।
 
 
 ## রিপোজিটরি তৈরি করা
-Start a new repository or obtain one from an existing URL
+একটি নতুন রিপোসিটোরি শুরু অথবা একটি বিদ্যমান URL থেকে শুরু করুন।
 
 
 ```$ git init [project-name]```
 
-Creates a new local repository with the specified name
+নির্দিষ্ট নাম দিয়ে একটি নতুন  রিপোসিটোরি তৈরি করুন। 
 
 
 ```$ git clone [url]```
 
-Downloads a project and its entire version history
+একটি প্রকল্প এবং তার সম্পূর্ণ সংস্করণ ইতিহাস ডাউনলোড করুন। 
 
 {% endcapture %}
 <div class="col-md-6">
@@ -55,37 +55,37 @@ Downloads a project and its entire version history
 {% capture colTwo %}
 
 ## পরিবর্তন করা
-Review edits and craft a commit transaction
+সম্পাদনা পর্যালোচনা করুন এবং একটি কমিট ট্রান্সেকসন ক্রাফট করুন।
 
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+সকল ফাইল লিস্ট করুন যা কমিট করা হবে।
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+ফাইলগুলোর পার্থক্য দেখুন যেগুলো এখনো staged হয়নি।
 
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+সংস্করনের  জন্য প্রস্তুতি ফাইল স্ন্যাপশট করুন।
 
 
 ```$ git diff --staged```
 
-Shows file differences between staging and the last file version
+staging এবং last file version এরমধ্যে পার্থক্য দেখুন।
 
 
 ```$ git reset [file]```
 
-Unstages the file, but preserves its contents
+ফাইল Unstages, কিন্তু তার বিষয়বস্তু অপরিবর্তিত রাখুন।
 
 
 ```$ git commit -m"[descriptive message]"```
 
-Records file snapshots permanently in version history
+ফাইলের  স্ন্যাপশট ভার্শনের ইতিহাসে সংরক্ষন করুন।
 
 ## গ্রুপ পরিবর্তন
 Name a series of commits and combine completed efforts
